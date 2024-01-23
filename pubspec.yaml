@@ -1,0 +1,65 @@
+name: hackernews_flutter
+description: "A new Flutter project."
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.4.9
+  flutter_widget_from_html: ^0.14.10+1
+  flutter_widget_from_html_core: ^0.14.10+1
+  freezed: ^2.4.6
+  freezed_annotation: ^2.4.1
+  fwfh_url_launcher: ^0.9.0+4
+  html_unescape: ^2.0.0
+  http: ^1.1.2
+  json_annotation: ^4.8.1
+  json_theme: ^6.4.0
+  path: ^1.8.3
+  path_provider: ^2.1.2
+  riverpod_annotation: ^2.3.3
+  settings_ui: ^2.0.2
+  sqflite: ^2.3.0
+  url_launcher: ^6.2.2
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+  riverpod_generator: ^2.3.9
+  build_runner: ^2.4.7
+  custom_lint: ^0.5.7
+  riverpod_lint: ^2.3.7
+  json_serializable: ^6.7.1
+
+flutter:
+  uses-material-design: true
+
+  # Enable generation of localized Strings from arb files.
+  generate: true
+
+  assets:
+    # Add assets from the images directory to the application.
+    - assets/images/
+    - assets/appainter_theme_oled_dark.json    
+    - assets/appainter_theme_light.json    
+    - assets/appainter_theme_blue.json
+
+  fonts:
+    - family: SourceSans3
+      fonts:
+        - asset: fonts/SourceSans3-Regular.ttf
+        - asset: fonts/SourceSans3-Italic.ttf
+          style: italic
+        - asset: fonts/SourceSans3-Bold.ttf
